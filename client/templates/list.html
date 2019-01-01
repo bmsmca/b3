@@ -1,0 +1,31 @@
+<div  ng-init="getcart()">
+	<p >cart List</p>
+	<div >
+		<table border = 1 >
+			<thead>
+			<tr>
+			  <th>Item No.</th>
+			  <th>Item Name</th>
+			  <th>Price</th>
+			  <th>Quantity Booked</th>
+			  <th>Total Order Value</th>
+			  <th>Actions</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="c in cart">
+			  <td>{{ c.item_no }}</td>
+			  <td>{{ c.name }}</td>
+			  <td>{{ c.price }}</td>
+			  <td>{{ c.quantity }}</td>
+			 <td>{{ c.quantity * c.price }}</td>
+			 <td> 
+			    <a href="#/cart/{{c._id}}/show" > ViewCart </a>
+			    <a href="#/cart/{{c._id}}/edit" > UpdateCart </a>
+			  	<a ng-click="deletecart(c._id)" > DeleteCart</a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>		
+    <div>
+<div>

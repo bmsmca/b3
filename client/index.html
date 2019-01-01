@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<title>Online Book Carting system</title>
+
+	<style>
+	a{
+		text-decoration:none;color:black;padding: 10px;
+	}
+	</style>
+
+
+</head>
+<body>
+	<ul >
+		<li ><a href="#/cart"> cart List</a></li>
+		<li ><a href="#/cart/add"> Add New product</a></li>
+	</ul>
+	<h3 >Online Book Carting system</h3>
+	<div ng-view></div>
+	<script src="angular-1.5.8/angular.min.js"></script>
+	<script src="angular-1.5.8/angular-route.min.js"></script>
+	<script src="app.js"></script>
+	<script src="controllers/controllers.js"></script>
+
+</body>
+</html>

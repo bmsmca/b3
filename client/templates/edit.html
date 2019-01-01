@@ -1,0 +1,30 @@
+<div  ng-init="showcart()">
+<p>Edit cart</p>
+	<div >
+		<form ng-submit="updatecart()">
+    <div >
+      Item Code: 
+      <input type="text"  ng-model="cart.item_no" value="cart.item_no">
+    </div>
+
+    <div >
+      Item Name:
+      <input type="text"  value="cart.name" ng-model="cart.name">
+    </div>
+
+   
+    <div >
+      Item Price:
+      <input type="text"  ng-model="cart.price" value="cart.price">
+    </div>
+
+    <div >
+        Item Quantity:
+        <input type="text"  value="cart.quantity" ng-model="cart.quantity">
+    </div>
+
+    <button type="submit"  >Update</button>
+    <a href="#/cart" > Cancel</a>
+</form>		
+    <div>
+<div>
